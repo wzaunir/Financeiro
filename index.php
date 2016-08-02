@@ -9,6 +9,7 @@
         <script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
         <script type="text/javascript" src="bower_components/underscore/underscore.js"></script>
         <script type="text/javascript" src="bower_components/backbone/backbone.js"></script>
+        <script type="text/javascript" src="js/principal.js"></script>
     </head>
 
     <body>
