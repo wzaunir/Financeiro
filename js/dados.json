@@ -3,23 +3,23 @@
 "desc": "Lojas Renner",
 "cat": "Roupas",
 "tipo": "D",
-"valor": 125.89
+"valor": -125.89
 },{
 "data": "08/02/2016",
 "desc": "Churrascaria",
 "cat": "Alimentação",
 "tipo": "D",
-"valor": 45.00
+"valor": -45.01
 },{
 "data": "09/02/2016",
 "desc": "Pagamento",
 "cat": "Salario",
 "tipo": "C",
-"valor": 1500.00
+"valor": 1500.77
 },{
 "data": "11/02/2016",
 "desc": "Loja do Tenis",
 "cat": "Roupas",
 "tipo": "D",
-"valor": 428.77
+"valor": -428.77
 }]

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Backbone</title>
+        <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+        <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.css" />
+        <script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
+        <script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+        <script type="text/javascript" src="bower_components/underscore/underscore.js"></script>
+        <script type="text/javascript" src="bower_components/backbone/backbone.js"></script>
+        <script type="text/javascript" src="js/models.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+
+                var lista_cidade = new ListaCidades();                
+                lista_cidade.fetch();
+                
+                var html = new Listagem({model: lista_cidade});
+       
+                html.render();
+                $('#btn').click(function(){
+                    
+                //    lista_cidade.set('nome','Belo Horizonte');
+                lista_cidade.get(888).set('nome','Belo Horizonte');
+                console.log (lista_cidade.get(888) );
+                });
+                
+            })
+
+        </script>
+    </head>
+
+    <body>
+        <ul id="lista">
+            
+        </ul>
+        <button id="btn">clique aqui</button>
+    </body>
+</html>

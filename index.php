@@ -9,7 +9,30 @@
         <script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
         <script type="text/javascript" src="bower_components/underscore/underscore.js"></script>
         <script type="text/javascript" src="bower_components/backbone/backbone.js"></script>
+        <script type="text/javascript" src="js/financeiro.js"></script>
         <script type="text/javascript" src="js/principal.js"></script>
+        <style>
+            
+            #saldo-total{
+             
+                font-weight: bolder;
+                font-size: 1.2em;
+                text-align: right;
+                
+            }
+            .positivo{
+                color:#009;
+            }
+            .negativo{
+                color:#900;
+                
+            }
+            .valor{
+                 text-align: right;
+                
+            }
+            
+        </style>
     </head>
 
     <body>
@@ -64,7 +87,7 @@
 
                     <h2 class="sub-header">Conta Corrente</h2>
                     <div class="table-responsive">
-                        <table  class="table table-striped">
+                        <table  class="table table-striped" id="tbl-cc">
                             <thead>
                                 <tr>
                                     <th>Data</th>
@@ -75,20 +98,14 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <td>10/02/2016</td>
-                                    <td>Loja Renner</td>
-                                    <td>Roupas</td>
-                                    <td>D</td>
-                                    <td>254,89</td>
-                                </tr>
+                                
                                 
                             </tbody>
                             <tfoot>
                                 <tr>
                                     
                                     <td colspan="4">Saldo</td>
-                                    <td>0,00</td>
+                                    <td id="saldo-total">0,00</td>
                                 </tr>
                             </tfoot>
                         </table>
